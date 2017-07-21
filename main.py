@@ -11,6 +11,9 @@ navProjects = [
     } for x in content.research
 ][1:]
 
+projects = dict()
+
+team = None
 
 @app.context_processor
 def utility_processor():
@@ -22,19 +25,23 @@ def index():
 
 @app.route("/aboutus")
 def aboutus():
-    c = content.team.copy()
-    for p in c:
-        c[p]['img'] = url_for('static', filename=c[p]['img'])
-    return render_template("aboutus.html", team=c)
+    global team
+    if not team:
+        team = content.team.copy()
+        for name in team:
+            team[name]['img'] = url_for('static', filename=team[name]['img'])
+    return render_template("aboutus.html", team=team)
 
 @app.route("/project")
 @app.route("/project/<name>")
 @app.route("/projects")
 @app.route("/projects/<name>")
 def project(name="placeholder"):
-    c = content.research[name].copy()
-    c['img'] = url_for('static', filename=c['img'])
-    return render_template("projects.html", content=c)
+    global projects
+    if name not in projects:
+        projects[name] = content.research[name].copy()
+        projects[name]['img'] = url_for('static', filename=projects[name]['img'])
+    return render_template("projects.html", content=projects[name])
 
 ##################### Error Handling #####################
 @app.errorhandler(404)

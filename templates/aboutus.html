@@ -5,9 +5,10 @@
 {% endblock %}
 
 {% block body %}
+
 <section class="page-title page-title-3 image-bg overlay parallax">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="static/img/cover15.jpg">
+        <img alt="Background Image" class="background-image" src="{{ url_for('static', filename='img/cover16.jpg') }}">
     </div>
     <div class="container">
         <div class="row">
@@ -17,18 +18,9 @@
         </div>
         
     </div>
-    
-    <!-- <ol class="breadcrumb breadcrumb-2">
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li class="active">
-            <a href="#">About Us</a>
-        </li>
-    </ol> -->
 </section>
     
-</section><section>
+<section>
     <div class="container">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1 text-center">
@@ -38,47 +30,45 @@
         </div>
         
     </div>
-    
-</section><section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="image-tile outer-title text-center">
-                    <img alt="Pic" src="static/img/team-1.jpg">
-                    <div class="title mb16">
-                        <h5 class="uppercase mb0">Alex Powers</h5>
-                        <span>Cofounder</span>
-                    </div>
-                    <p class="mb0">
-                        I like nanotechnology, cancer biology, and machine learning. I work in the Alivisatos Lab on liquid electron microscopy and was previously an intern at Berkeley National Laboratory. I enjoy graphic design and am Editor-in-Chief of the Berkeley Scientific Journal.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="image-tile outer-title text-center">
-                    <img alt="Pic" src="static/img/team-2.jpg">
-                    <div class="title mb16">
-                        <h5 class="uppercase mb0">Amit Akula</h5>
-                        <span>Cofounder</span>
-                    </div>
-                    <p class="mb0">
-                        I like image segmentation, neuroscience, and community data science. I work at UCSF on algorithms for MRI processing. I previously worked in the Goldberg lab on surgical robotics and served as an RA and CLA in Unit 4.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="image-tile outer-title text-center">
-                    <img alt="Pic" src="static/img/team-3.jpg">
-                    <div class="title mb16">
-                        <h5 class="uppercase mb0">Mrinalini Sugosh</h5>
-                        <span>Chief Operations Officer</span>
-                    </div>
-                    <p class="mb0">
-                        I currently work with the  CS61A Course Staff and work with CITRIS on a developing software for a Nanotechnology Based BioSensor Array. I am super passionate about promoting diversity in STEM and lowering the barrier for entry into research. 
-                    </p>
-                </div>
-            </div>
+
+    <div class="container" style="padding-top: 50px">
+        <div class="col-sm-10 col-sm-offset-1 text-center">
+            <h3 class="uppercase color-primary mb40 mb-xs-24">OUR MEMBERS</h3>
         </div>
+        {% for person in team %}
+
+            {% if loop.index % 3 == 0 %}
+            <div class="row">
+            {% endif %}
+                <div class="col-md-4">
+                    <div class="image-tile outer-title text-center">
+                        <img alt="Pic" src="{{ team[person]['img'] }}" style="height: 240px; max-width: 300px">
+                        <div class="title mb16">
+                            <h5 class="uppercase mb0">{{ person }}</h5>
+                            <span>{{ team[person]['title'] }}</span>
+                            <div class="bio-icon">
+                                {% if not team[person]['personal'] == '' %}
+                                    <span><a href="{{ team[person]['personal'] }}" target="_blank"><i class="ti-world"></i></a></span>
+                                {% endif %}
+                                {% if not team[person]['github'] == '' %}
+                                    <span><a href="{{ team[person]['github'] }}" target="_blank"><i class="ti-github"></i></a></span>
+                                {% endif %}
+                                {% if not team[person]['linkedin'] == '' %}
+                                    <span><a href="{{ team[person]['linkedin'] }}" target="_blank"><i class="ti-linkedin"></i></a></span>
+                                {% endif %}
+                            </div> 
+                        </div>
+                        <p class="mb0">
+                            {{ team[person]['bio'] }}
+                        </p>
+                    </div>
+                </div>
+
+            {% if loop.index % 3 == 0 %}
+            </div>
+            {% endif %}
+
+        {% endfor %}
         
     </div>
     

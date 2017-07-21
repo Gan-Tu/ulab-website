@@ -4,8 +4,8 @@
                 <div class="nav-bar">
                     <div class="module left">
                         <a href="/">
-                            <img class="logo logo-light" alt="Foundry" src="static/img/logo-light.png">
-                            <img class="logo logo-dark" alt="Foundry" src="static/img/logo-dark.png">
+                            <img class="logo logo-light" alt="Foundry" src="{{ url_for('static', filename='img/logo-light.png') }}">
+                            <img class="logo logo-dark" alt="Foundry" src="{{ url_for('static', filename='img/logo-dark.png') }}">
                         </a>
                     </div>
                     <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
@@ -16,26 +16,34 @@
                             <ul class="menu">
                                 <li>
                                     <a href="/">Home </a>
-                                </li><li>
+                                </li>
+                                <li>
                                     <a href="/aboutus">About Us</a>
                                 </li>
                                 <li class="has-dropdown">
                                     <a href="#">Research Projects</a>
                                     <ul>
-                                        <li>
-                                            <a href="/projects">
-                                                projects
+                                        {% for project in navProjects %}
+                                        <li>   
+                                            <a href="{{ project['url'] }}">
+                                                <small>{{ project['name'] }}</small>
                                             </a>
                                         </li>
+                                        {% endfor %}
                                     </ul>
-                                </li><li>
-                                    <a href="/#joinus" class="inner-link" target="_self">Join Us</a>
                                 </li>
                                 
                             </ul>
                         </div>
-                        
-                        
+
+                        <div class="module widget-handle left">
+                            <ul class="menu">
+                                <li>
+                                    <a href="/#joinus" class="inner-link" target="_self">Join Us</a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                     
                 </div>

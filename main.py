@@ -1,7 +1,20 @@
 import os
 from flask import Flask, render_template, url_for, redirect
+import content
 
 app = Flask(__name__)
+
+navProjects = [
+    {
+        "url": "/projects/{}".format(x), 
+        "name": content.research[x]["navbar"]
+    } for x in content.research
+][1:]
+
+
+@app.context_processor
+def utility_processor():
+    return dict(navProjects=navProjects)
 
 @app.route("/")
 def index():
@@ -9,15 +22,28 @@ def index():
 
 @app.route("/aboutus")
 def aboutus():
-    return render_template("aboutus.html")
+    c = content.team.copy()
+    for p in c:
+        c[p]['img'] = url_for('static', filename=c[p]['img'])
+    return render_template("aboutus.html", team=c)
 
+@app.route("/project")
+@app.route("/project/<name>")
 @app.route("/projects")
-def project():
-    return render_template("project-template.html")
+@app.route("/projects/<name>")
+def project(name="placeholder"):
+    c = content.research[name].copy()
+    c['img'] = url_for('static', filename=c['img'])
+    return render_template("projects.html", content=c)
 
+##################### Error Handling #####################
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
-
-
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template('404.html'), 500
 
 #################### Main App #####################
 if __name__ == "__main__":

@@ -8,12 +8,12 @@
         <meta name="description" content="Undergraduate Lab @ Berkeley, ULAB"/>
         <meta author="Gan Tu (Michael)">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="static/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-        <link href="static/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="static/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="static/css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="static/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" media="all">
+        <link href="{{ url_for('static', filename='css/themify-icons.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ url_for('static', filename='css/flexslider.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ url_for('static', filename='css/theme.css') }}" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{ url_for('static', filename='css/custom.css') }} " rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
     </head>
     <body class="scroll-assist">
@@ -26,9 +26,6 @@
             
             {% block body %}
             {% endblock %}
-
-            <!-- Return to Top -->
-            <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
             
             {% block footer %}
             <footer class="footer-2 bg-dark text-center-xs">
@@ -36,7 +33,10 @@
                     <div class="row">
 
                         <div class="col-sm-4">
-                            <a href="#"><img class="image-xxs fade-half" alt="Logo" src="static/img/logo-light.png"></a>
+                            <a href="#"><img class="image-xxs fade-half" alt="Logo" src="{{ url_for('static', filename='img/logo-light.png') }}"></a>
+                            <br>
+                            <a href="https://www.facebook.com/uLab.Berkeley/" target="_blank"><i class="ti-facebook"></i></a>
+                            <a href="mailto:ulab.berkeley@gmail.com"><i class="ti-email"></i></a>
                             <br>
                             <span class="fade-half">
                                 © Copyright 2017 ULAB - All Rights Reserved
@@ -46,7 +46,7 @@
                         <div class="col-sm-4"></div>
 
                         <div class="col-sm-4 text-right">
-                            <a href="https://www.ocf.berkeley.edu" target="_blank"><img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" class="image-xxs fade-half" style="border: 0;" /></a> <a href="https://www.facebook.com/uLab.Berkeley/" target="_blank"><i class="ti-facebook"></i></a>
+                            <a href="https://www.ocf.berkeley.edu" target="_blank"><img src="https://www.ocf.berkeley.edu/hosting-logos/ocf-hosted-penguin-dark.svg" alt="Hosted by the OCF" class="image-xxs fade-half" style="border: 0;" /></a>
                             <span class="fade-half"><br><small>We are a student group acting independently of the university of california. We take full responsibility for our organization and this web site.</small></span>
                         </div>
                     </div>
@@ -56,12 +56,12 @@
 
         </div>
                 
-        <script src="static/js/jquery.min.js"></script>
-        <script src="static/js/bootstrap.min.js"></script>
-        <script src="static/js/flexslider.min.js"></script>
-        <script src="static/js/smooth-scroll.min.js"></script>
-        <script src="static/js/parallax.js"></script>
-        <script src="static/js/scripts.js"></script>
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/flexslider.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/smooth-scroll.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/parallax.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
     </body>
 </html>
                 

@@ -104,20 +104,20 @@ research = {
                     
                     <h4>Overview</h4>
 
-                    <p class="lead">Can we infer the “community structure” of individuals in the residence halls given data such as DC traffic data, Facebook data, classes, etc.? What does this data tell us about community formation in the residence halls?
+                    <p class="lead">Can we infer the "community structure" of individuals in the residence halls given data such as DC traffic data, Facebook data, classes, etc.? What does this data tell us about community formation in the residence halls?
                     </p>
 
                     <h4>Research Goals</h4>
 
                     <ul class='bullets'>
-                        <li>Develop a system to be implemented next year that can, in real-time, visualize the “implicit” community structure for the Foothill Residence Hall (and other communities)</li>
+                        <li>Develop a system to be implemented next year that can, in real-time, visualize the "implicit" community structure for the Foothill Residence Hall (and other communities)</li>
                         <li>Develop a general understanding of network analysis (i.e. graph theory) and do a survey of the classic community detection and network analysis algorithms</li>
                         <li>Collect a comprehensive data-set for a community of interest (i.e. probably WISE/Foothill)</li>
                         <li>Develop a suite of visualization and analysis tools:
                             <div class="indented-list">
                                 <li>Construct networks of relationships within a community</li>
-                                <li>Analyzes difference in measured networks and (simulate possible </li>networks and use the measured network to develop a probabilistic model describing how communities form) “possible” networks
-                                <li>Identifies “communities” and cliques</li>
+                                <li>Analyzes difference in measured networks and (simulate possible </li>networks and use the measured network to develop a probabilistic model describing how communities form) "possible" networks
+                                <li>Identifies "communities" and cliques</li>
                             </div>
                         </li>
                     </ul>

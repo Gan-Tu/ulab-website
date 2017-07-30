@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 research = {
     "placeholder": {
         "date": "23 Sep",
@@ -135,8 +136,7 @@ research = {
                     
                     <h4>Our Motivation and Project Overview</h4>
 
-                    <p class="lead">Everyone loves food, but sometimes food is deadly. Food is essential, not only to survival, but also to students’ well-being now and in the future. Thus, we are interested in examining the impact of cooking under various circumstances on students’ long-term health.</p>
-
+                    <p class="lead">Everyone loves food, but sometimes food is deadly. Food is essential, not only to survival, but also to students’ well-being now and in the future. Thus, we are interested in examining the impact of cooking under various circumstances on students' long-term health.</p>
                     <p>There has been large amount of news that relates certain food types to the potential risk of cancer, such as the New York Times report on the presence of carcinogens in bacon, one of the most popular breakfast items in America.</p>
                     <p>In this research, we plan on measuring carcinogen levels in different meats and possibly vegetables taken from different source that a Berkeley student is likely to get food from such as the dining hall, popular restaurants, or food cooked at home using different cooking methods.</p>
                     <p>We noticed that students’ level of exposure to carcinogens from cooking on a daily basis is unknown. So to figure out the exact risks theses substances exert on the student community, we need to identify the extent of damage each of our samples are capable of in regards to human health.</p>
@@ -353,7 +353,7 @@ team = {
         "personal": "",
         "github": "",
         "linkedin": "https://www.linkedin.com/in/nguyenkyle",
-        "bio": """Outside of school, I''m an avid nature enthusiast and frequently hike. In addition to hiking I have also gone spearfishing and spelunking. In addition to the nature, I love animals and have a cat at home. I am also a car enthusiast and own 2 mazda miatas."""
+        "bio": """Outside of school, I'm an avid nature enthusiast and frequently hike. In addition to hiking I have also gone spearfishing and spelunking. In addition to the nature, I love animals and have a cat at home. I am also a car enthusiast and own 2 mazda miatas."""
     },
     "Ashvin  Nihalani": {
         "img": "img/team/ashvin_nihalani.jpg",

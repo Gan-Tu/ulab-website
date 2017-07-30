@@ -11,8 +11,10 @@ navProjects = [
     } for x in content.research
 ][1:]
 
+# cache useful info to prevent reloading
 projects = dict()
-
+founders = None
+advisors = None
 team = None
 
 @app.context_processor
@@ -25,12 +27,25 @@ def index():
 
 @app.route("/aboutus")
 def aboutus():
+    global founders
+    if not founders:
+        founders = content.founders.copy()
+        for name in founders:
+            founders[name]['img'] = url_for('static', filename=founders[name]['img'])
+
+    global advisors
+    if not advisors:
+        advisors = content.advisors.copy()
+        for name in advisors:
+            advisors[name]['img'] = url_for('static', filename=advisors[name]['img'])
+
     global team
     if not team:
         team = content.team.copy()
         for name in team:
-            team[name]['img'] = url_for('static', filename=team[name]['img'])
-    return render_template("aboutus.html", team=team)
+            team[name]['img'] = url_for('static', filename=team[name]['img'])     
+
+    return render_template("aboutus.html", founders=founders, advisors=advisors, team=team)
 
 @app.route("/project")
 @app.route("/project/<name>")

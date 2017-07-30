@@ -650,6 +650,8 @@ $(document).ready(function() {
         $(this).closest('.tabbed-content').find('.content>li:nth-of-type(' + liIndex + ')').addClass('active');
     });
 
+    $('.active').click();
+
     // Local Videos
 
     $('section').closest('body').find('.local-video-container .play-button').click(function() {

@@ -1,7 +1,7 @@
 research = {
     "placeholder": {
         "date": "23 Sep",
-        "img": "img/blog-single.jpg",
+        "img": "img/project/blog-single.jpg",
         "title": "A simple image post for starters",
         "team": ["Craig Garner"],
         'navbar': "placeholder",
@@ -29,7 +29,7 @@ research = {
     "tiny-environmental-impact-group": {
         "date": "17 Nov, 2017",
         "navbar": "Tiny Home Env. Impact",
-        "img": "img/tiny-environmental-impact-group.png",
+        "img": "img/project/tiny-environmental-impact-group.png",
         "title": "Tiny Home Environmental Impact Group",
         "team": ["ULAB"],
         "has_mentor": False,
@@ -47,7 +47,7 @@ research = {
     "engineering-automated-weed-removal": {
         "date": "17 Nov, 2017",
         "navbar": "Automated Weed Removal",
-        "img": "img/engineering-automated-weed-removal.jpg",
+        "img": "img/project/engineering-automated-weed-removal.jpg",
         "title": "Engineering Automated Weed Removal",
         "team": ["ULAB"],
         "has_mentor": False,
@@ -55,14 +55,14 @@ research = {
         "content": """
                     <p>Weeding is a significant time and resource demanding task faced by modern agriculture. Modern techniques rely on use of chemical herbicides such as Roundup to efficiently eliminate weeds, but the uncertain environmental impact of such chemicals is reason for considering alternative methods. The engineering design group is considering the viability of robotic systems as an alternative method of weed control.</p>
 
-                    <p>FRIEND is the robotic system being designed by the environmental design group. In particular, this system will need to include both weed identification and removal capabilities. The group is currently researching methods of weed identification, focusing on image processing techniques. Simultaneously, the group is examining robotics control error and arduino control for a robotic chasis./p>
+                    <p>FRIEND is the robotic system being designed by the environmental design group. In particular, this system will need to include both weed identification and removal capabilities. The group is currently researching methods of weed identification, focusing on image processing techniques. Simultaneously, the group is examining robotics control error and arduino control for a robotic chasis.</p>
 
                     <p>Image source: knowmoregrowmore.com</p>""",
     },
     "mind-reading": {
         "date": "17 Nov, 2017",
         "navbar": "Mind Reading via fMRI",
-        "img": "img/mind-reading.png",
+        "img": "img/project/mind-reading.png",
         "title": "Mind Reading - Predicting Decisions via fMRI",
         "team": ["Vera Wang", "Yiming Ding", "Muying Chen", "Bansi Parekh"],
         "has_mentor": True,
@@ -95,7 +95,7 @@ research = {
     "community-analysis-of-foothill-residence-halls": {
         "date": "17 Nov, 2017",
         "navbar": "Community Analysis",
-        "img": "img/community-analysis-of-foothill-residence-halls.jpg",
+        "img": "img/project/community-analysis-of-foothill-residence-halls.jpg",
         "title": "Community Analysis of Foothill Residence Halls",
         "team": ["Sam Good", "Makena Fetzer"],
         "has_mentor": True,
@@ -126,7 +126,7 @@ research = {
     "consumable-carcinogen": {
         "date": "17 Nov, 2017",
         "navbar": "Consumable Carcinogen",
-        "img": "img/consumable-carcinogen.jpg",
+        "img": "img/project/consumable-carcinogen.jpg",
         "title": "Consumable Carcinogen Measurement Group",
         "team": ["Moriel Dror", "Aubrianne Milton"],
         "has_mentor": True,
@@ -166,7 +166,7 @@ research = {
     "public-health-group": {
         "date": "17 Nov, 2017",
         "navbar": "Public Health Group",
-        "img": "img/public-health-group.jpg",
+        "img": "img/project/public-health-group.jpg",
         "title": "Public Health Group",
         "team": ["ULAB"],
         "has_mentor": False,
@@ -193,7 +193,7 @@ research = {
     },
 }
 
-team = {
+founders = {
     # "placeholder": {
     #     "title": "placeholder",
     #     "img": "img/team-1.jpg",
@@ -201,26 +201,179 @@ team = {
     # },
     "Alex Powers": {
         "title": "Cofounder",
-        "img": "img/music1.jpg",
+        "img": "img/team/alex_power.jpg",
         "personal": "",
         "github": "",
         "linkedin": "",
-        "bio": """I like nanotechnology, cancer biology, and machine learning. I work in the Alivisatos Lab on liquid electron microscopy and was previously an intern at Berkeley National Laboratory. I enjoy graphic design and am Editor-in-Chief of the Berkeley Scientific Journal.""",
+        "bio": """Alex is currently pursuing a Ph.D. at Stanford University. Alex is extremely passionate about undergraduate research; he worked in Paul Alivisatos’s Lab on liquid electron microscopy, the Cohen lab on imaging protein movement, and was also an intern at LBNL. He will continue to advise and work with ULAB.""",
     },
     "AMIT AKULA": {
         "title": "Cofounder",
-        "img": "img/phot1.jpg",
+        "img": "img/team/amit_akula.jpg",
         "personal": "",
         "github": "",
         "linkedin": "",
-        "bio": """I like image segmentation, neuroscience, and community data science. I work at UCSF on algorithms for MRI processing. I previously worked in the Goldberg lab on surgical robotics and served as an RA and CLA in Unit 4.""",
+        "bio": """Amit does research at UCSF on algorithms for MRI processing and previously worked in the Goldberg lab on surgical robotics. He has served as an RA, community leadership assistant, and TA. In these pursuits, he has strived to develop new, more effective teaching methods and workshops. His close connections with the Residence Hall programs enabled the partnership between the programs.""",
     },
     "MRINALINI SUGOSH": {
         "title": "Chief Operations Officer",
-        "img": "img/phot2.jpg",
+        "img": "img/team/mrinalini_sugosh.jpg",
         "personal": "",
         "github": "",
         "linkedin": "https://www.linkedin.com/in/mrina24/",
-        "bio": """Hey! Call me Mrina... I like jamming to spotify, trying all kinds of new foods, hoarding free swag, and spontaneously hanging out with friends :) I am super passionate about promoting diversity in STEM and lowering the barrier for entry into research.""",
+        "bio": """Mrina is currently a member of the CS61A Course Staff, Computer Science Mentors, and Society for Women Engineers. Last year, she researched in Dr. Waqas Khalid’s lab at the CITRIS institute on creating a platform that helped visualize a programmable array of nanostructures. She is passionate about promoting diversity in STEM and is excited to lower the barrier for entry into research. """,
     },
+    "Dylan Kato": {
+        "title": "Lead Mentor",
+        "img": "img/team/dylan_kato.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "",
+        "bio": """Dylan is part of the Cal Seismic team, Cal Environment team, and an officer in TBP. Dylan does research in Professor Goldberg’s lab that is looking at treating water using solar energy. He facilitated our pilot program partnership with Berkeley Tiny Home, a renewable housing project with which several of our students are working.""",
+    },
+    "Michael Oshiro": {
+        "title": "Cofounder",
+        "img": "img/team/michael_oshiro.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "",
+        "bio": """Michael works at the LBNL lab with data from the ATLAS experiment, the detector at the Large Hadron Collider. He is interested in making undergraduate research more accessible to freshmen. Michael worked to set up ULAB’s framework for workshops and accessible resources across campus.""",
+    },
+    "Joshua Hug": {
+        "title": "Faculty Advisor",
+        "img": "img/team/josh_hug.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "",
+        "bio": """Joshua Hug is a teaching professor at Berkeley and previously a lecturer for Computer Science at Princeton University. His primary research interest is in learning at scale and he has developed large scalable teaching models for CS61B and CS188. His passion for finding new and better ways to educate students led him to advise and support ULAB.""",
+    },
+}
+
+advisors = {
+    "Joshua Hug": {
+        "title": "Faculty Advisor",
+        "img": "img/team/josh_hug.jpg",
+        "bio": """Joshua Hug is a teaching professor at Berkeley and previously a lecturer for Computer Science at Princeton University. He completed his PhD in EECS at UC Berkeley in 2011. His primary research interest is in learning at scale and he has developed large scalable teaching models for CS61B and CS188. His passion for finding new and better ways to educate students led him to advise and support ULAB.""",
+    },
+    "Diana Lizzarga": {
+        "title": "Faculty Advisor",
+        "img": "img/team/diana_lizzarga.jpg",
+        "bio": """Diana is the current director of Cal Nerds and has over 20 years of experience in higher education and improving equity and access. Currently she directs seven equity and success programs/initiatives. She is also working on her doctorate in educational leadership at UC Davis. She works with ULAB on developing niche workshops for students and advising on how to recruit and retain non-traditional students.""",
+    },
+    "MaryAnn Robak": {
+        "title": "Faculty Advisor",
+        "img": "img/team/mary_ann_robak.jpg",
+        "bio": """Professor Robak is a lecturer in the College of Chemistry, teaching several undergraduate organic chemistry classes such as Chemistry 112B and Chemistry 115. Having taught on campus for nearly seven years after getting her Ph.D. at Cal, she is deeply passionate about providing an enjoyable and intellectually stimulating experience for undergraduates. Next year, Professor Robak hopes to re-vamp the organic chemistry curriculum and is excited for a collaboration with ULAB.""",
+    },
+    "Alex Powers": {
+        "title": "Cofounder",
+        "img": "img/team/alex_power.jpg",
+        "bio": """Alex is currently pursuing a Ph.D. at Stanford University. Alex is extremely passionate about undergraduate research; he worked in Paul Alivisatos’s Lab on liquid electron microscopy, the Cohen lab on imaging protein movement, and was also an intern at LBNL. He will continue to advise and work with ULAB.""",
+    },
+    "Sean Burns": {
+        "title": "Faculty Advisor",
+        "img": "img/team/sean_burns.jpg",
+        "bio": """Sean serves as the Director of the Office of Undergraduate Research and Scholarship (OURS) and has been involved with managing and founding organizations and services to assist undergraduate researchers in diverse communities. His own scholarship and teaching focuses on U.S. social movement history and the dynamic intersections of community activism, political education, and the remaking of the social imagination. He is enthusiastic about making ULAB a successful feature in the undergraduate research program ecosystem.""",
+    },
+}
+
+team = {
+    "Eva Su": {
+        "img": "img/team/eva_su.jpg",
+        "personal": "",
+        "github": "https://github.com/esu2020",
+        "linkedin": "https://www.linkedin.com/in/sueva/",
+        "bio": """Hi, I'm Eva! People call me Eva, but you can call me Eva. Some fun facts about me:  I performed on Broadway last summer, own my own business, and I've traveled to over 16 countries. """
+    },
+    "Mrinalini Sugosh": {
+        "img": "img/team/mrinalini_sugosh.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/mrina24/",
+        "bio": """Hey! Call me Mrina...I like jamming to spotify, trying all kinds of new foods, hoarding free swag, and spontaneously hanging out with friends :)"""
+    },
+    "Riley McDanal": {
+        "img": "img/team/riley_mcdanal.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "",
+        "bio": """I like to sing out loud in my apartment despite the never-ending fear of my neighbors judging me. My homemade speciality is carbonara tacos. Also, I love psychology, politics, and really anything that gets me thinking. """
+    },
+    "Annie Tang": {
+        "img": "img/team/annie_tang.jpg",
+        "personal": "",
+        "github": "https://github.com/anniewtang",
+        "linkedin": "https://www.linkedin.com/in/anniewtang/",
+        "bio": """In my spare time I like to wander through the aisles of 85c and am constantly listening to music (I actually don't believe I've gone a single day since the 6th grade without listening to music). I also have a (un)healthy collection of stationery, and quite enjoy the colors yellow and orange. Coincidentally, I also love ba""as and oranges. Correlation? Causation? Who knows!"""
+    },
+    "Min Young Kim": {
+        "img": "img/team/min_young_kim.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/min-young-kim-93281211a/",
+        "bio": """I love listening to music and spend too much money on different concerts. While I also enjoy watching movies, I usually get too lazy to go to a movie theater to actually watch any of them, so I most likely will not get your movie references."""
+    },
+    "May Myat Mon": {
+        "img": "img/team/may_myat_mon.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "",
+        "bio": """Hello! My name is May Myat Mon but you can call me Margaret. I enjoy spending quality time with my family and friends. Aside from academics, I love playing badminton and watching movies! :) """
+    },
+    "Cecilia Li": {
+        "img": "img/team/cecilia_li.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/cecilia-li/",
+        "bio": """Hi everyone! My name is Cecilia, a rising sophomore studying statistics and industrial research business. I was originally born in China, immigrated to Toronto, Canada at an early age and moved between both countries in the last ten years. I like outdoor activities and also learning DSLR photography. You can find me exploring new places, taking long walks on the beach, and always eating food :) """
+    },
+    "Glenn Parham": {
+        "img": "img/team/glenn_parham.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "",
+        "bio": """Do you have nightmares about election polling data and/or day dream about accurate stock market price modeling?  I do.  I am that teen who skips a party to read a book, a hike to take a nap, and a rave to FaceTime a friend.  An action-packed day for me probably entails reading The New Yorker in the morning, followed by divulging in F.E.C filings, and topping it off with Steven Colbert."""
+    },
+    "Asena Yildiz": {
+        "img": "img/team/asena_yildiz.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/asena-yildiz/",
+        "bio": """I'm Asena Yildiz, an avid archer, entrepreneur, and rock collector. I love bringing ideas to life, which is ultimately why I wanted to be an engineer. In my spare time, I draw, paint, and play with different mediums for my artwork. I am also a writer, imagining and designing worlds from scratch. As an artistic engineer, I tend to combine both of my interests. Oh! I also started a company once."""
+    },
+    "Madeleine Weiser": {
+        "img": "img/team/madeleine_weiser.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "",
+        "bio": """I'm a Minnesotan-turned-Californian girl with many, many interests and I am incredibly indecisive. I am happiest when I am outdoors whether it is walking, swimming, hiking, biking, or just lounging around. I adore nature, animals, and sunshine! My family and friends are super important to me, but I'm also always down to meet new people and try new things."""
+    },
+    "Kyle Nguyen": {
+        "img": "img/team/kyle_nguyen.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/nguyenkyle",
+        "bio": """Outside of school, I''m an avid nature enthusiast and frequently hike. In addition to hiking I have also gone spearfishing and spelunking. In addition to the nature, I love animals and have a cat at home. I am also a car enthusiast and own 2 mazda miatas."""
+    },
+    "Ashvin  Nihalani": {
+        "img": "img/team/ashvin_nihalani.jpg",
+        "personal": "http://www.theashvin.xyz/",
+        "github": "https://github.com/ashvinnihalani",
+        "linkedin": "https://www.linkedin.com/in/ashvinnihalani/",
+        "bio": """I am a chill basketball player who likes to read. I love tinkering as it gives me a chance to explore some mechanics and fields I never delve into."""
+    },
+    "Richard Cai": {
+        "img": "img/team/richard_cai.jpg",
+        "personal": "",
+        "github": "https://github.com/richardmcai",
+        "linkedin": "https://www.linkedin.com/in/richardmcai/",
+        "bio": """I'm from Charlotte, North Carolina. In my free time I enjoy reading about philosophy, sociology, and politics. I also like to occasionally rot my brain with anime and video games. Recently I've been getting into hip-hop dance on AFX, and it's been lots of fun! I hope I can use research to make a lasting positive impact on society."""
+    },
+    "Amit Akula": {
+        "img": "img/team/amit_akula.jpg",
+        "personal": "",
+        "github": "",
+        "linkedin": "",
+        "bio": """I started Berkeley pre-law, pre-med, and engineering because I actually had no idea what I wanted to do. That made Berkeley so much more fun! I worked at the Rent Board. Taught 61B three times. Hiked to abandoned factories across the Golden Gate Bridge. Finally, I found that I was passionate about helping people solve complex problems. Also I'm a better cook than Dylan.""",
+    }
 }

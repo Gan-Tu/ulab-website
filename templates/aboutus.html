@@ -39,36 +39,14 @@
                     <!-- <h3 class="uppercase color-primary mb40 mb-xs-24">ABOUT US</h3> -->
                     <div class="tabbed-content button-tabs">
                         <ul class="tabs">
-                            <li>
+                            <li class="active">
                                 <div class="tab-title">
-                                    <span>Advisors</span>
+                                    <span>Mission</span>
                                 </div>
-                                <div class="tab-content">
-                                    <div class="container" style="padding-top: 50px">
-                                        {% for person in advisors %}
-
-                                            {% if loop.index % 3 == 0 %}
-                                            <div class="row">
-                                            {% endif %}
-                                                <div class="col-md-4">
-                                                    <div class="image-tile outer-title text-center">
-                                                        <img alt="Pic" src="{{ advisors[person]['img'] }}" style="height: 240px; max-width: 300px">
-                                                        <div class="title">
-                                                            <h5 class="uppercase mb0">{{ person }}</h5>
-                                                            <span>{{ advisors[person]['title'] }}</span>
-                                                        </div>
-                                                        <p class="mb0">
-                                                            {{ advisors[person]['bio'] }}
-                                                        </p>
-                                                    </div>
-                                                </div>
-
-                                            {% if loop.index % 3 == 0 %}
-                                            </div>
-                                            {% endif %}
-
-                                        {% endfor %}     
-                                    </div>
+                                <div class="tab-content col-md-10 col-md-offset-1">
+                                    <p class="lead">
+                                        A productive and enjoyable undergraduate research experience at Berkeley requires a significant activation energy that deters many beginning students. This stems from a tendency for many programs to favor already experienced students and difficulty for new students in navigating a complex myriad of resources. Additionally, students who assist graduate mentors often do not get the chance to generate ideas themselves or interact with other undergraduate researchers in diverse fields.<br><br>ULAB proposes to create an undergraduate “research lab” to gently introduce new students to research at Berkeley as well as provide a social/mentoring experience for already advanced undergraduate researchers to learn from each other and develop professionally. “Lab members” will attend workshops on professional communications or reading research papers, go on tours of campus research labs, listen to talks by professors, and present on their own research work. The program is particularly aimed at students who are interested in research but might not be as aggressive or experienced to seek out these opportunities on their own – ULAB will be the catalyst to kickstart their Berkeley research careers.
+                                    </p>
                                 </div>
                             </li>
                             <li>
@@ -117,14 +95,36 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="active">
+                            <li>
                                 <div class="tab-title">
-                                    <span>Mission</span>
+                                    <span>Advisors</span>
                                 </div>
-                                <div class="tab-content col-md-10 col-md-offset-1">
-                                    <p class="lead">
-                                        A productive and enjoyable undergraduate research experience at Berkeley requires a significant activation energy that deters many beginning students. This stems from a tendency for many programs to favor already experienced students and difficulty for new students in navigating a complex myriad of resources. Additionally, students who assist graduate mentors often do not get the chance to generate ideas themselves or interact with other undergraduate researchers in diverse fields.<br><br>ULAB proposes to create an undergraduate “research lab” to gently introduce new students to research at Berkeley as well as provide a social/mentoring experience for already advanced undergraduate researchers to learn from each other and develop professionally. “Lab members” will attend workshops on professional communications or reading research papers, go on tours of campus research labs, listen to talks by professors, and present on their own research work. The program is particularly aimed at students who are interested in research but might not be as aggressive or experienced to seek out these opportunities on their own – ULAB will be the catalyst to kickstart their Berkeley research careers.
-                                    </p>
+                                <div class="tab-content">
+                                    <div class="container" style="padding-top: 50px">
+                                        {% for person in advisors %}
+
+                                            {% if loop.index % 3 == 0 %}
+                                            <div class="row">
+                                            {% endif %}
+                                                <div class="col-md-4">
+                                                    <div class="image-tile outer-title text-center">
+                                                        <img alt="Pic" src="{{ advisors[person]['img'] }}" style="height: 240px; max-width: 300px">
+                                                        <div class="title">
+                                                            <h5 class="uppercase mb0">{{ person }}</h5>
+                                                            <span>{{ advisors[person]['title'] }}</span>
+                                                        </div>
+                                                        <p class="mb0">
+                                                            {{ advisors[person]['bio'] }}
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            {% if loop.index % 3 == 0 %}
+                                            </div>
+                                            {% endif %}
+
+                                        {% endfor %}     
+                                    </div>
                                 </div>
                             </li>
                             <li>

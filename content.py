@@ -136,11 +136,11 @@ research = {
                     
                     <h4>Our Motivation and Project Overview</h4>
 
-                    <p class="lead">Everyone loves food, but sometimes food is deadly. Food is essential, not only to survival, but also to students’ well-being now and in the future. Thus, we are interested in examining the impact of cooking under various circumstances on students' long-term health.</p>
+                    <p class="lead">Everyone loves food, but sometimes food is deadly. Food is essential, not only to survival, but also to students' well-being now and in the future. Thus, we are interested in examining the impact of cooking under various circumstances on students' long-term health.</p>
                     <p>There has been large amount of news that relates certain food types to the potential risk of cancer, such as the New York Times report on the presence of carcinogens in bacon, one of the most popular breakfast items in America.</p>
                     <p>In this research, we plan on measuring carcinogen levels in different meats and possibly vegetables taken from different source that a Berkeley student is likely to get food from such as the dining hall, popular restaurants, or food cooked at home using different cooking methods.</p>
-                    <p>We noticed that students’ level of exposure to carcinogens from cooking on a daily basis is unknown. So to figure out the exact risks theses substances exert on the student community, we need to identify the extent of damage each of our samples are capable of in regards to human health.</p>
-                    <p>Since people aren’t usually well aware of the recent research into carcinogens and wouldn’t notice the risks of food that is common, they often assume that the food they consume everyday is safe. In the light of the situation, we find our research significant for the Berkeley community.</p>
+                    <p>We noticed that students' level of exposure to carcinogens from cooking on a daily basis is unknown. So to figure out the exact risks theses substances exert on the student community, we need to identify the extent of damage each of our samples are capable of in regards to human health.</p>
+                    <p>Since people aren't usually well aware of the recent research into carcinogens and wouldn't notice the risks of food that is common, they often assume that the food they consume everyday is safe. In the light of the situation, we find our research significant for the Berkeley community.</p>
 
                     <h4>Our Research So Far</h4>
 
@@ -158,7 +158,7 @@ research = {
 
                     <p>An additional topic we will potentially explore next semester are whether Berkeley students are getting enough vitamin C by measuring vitamin C levels in samples of various foods obtained from the dining hall.  To supplement this research, we want to determine how many people are taking vitamin supplements and whether there is a correlation between how people who take vitamin supplements are feeling  and performing academically.</p>
 
-                    <p>Another topic that we want to explore is how we can use nanoparticles to improve water purification systems by experimenting using the water purification system in the THIMBY house on campus. The experiment would test on the system’s ability to exclude harmful chemicals such as heavy metal ions and contaminants out of the water body, and proper control would be carry out using no filter and regular filters.</p>
+                    <p>Another topic that we want to explore is how we can use nanoparticles to improve water purification systems by experimenting using the water purification system in the THIMBY house on campus. The experiment would test on the system's ability to exclude harmful chemicals such as heavy metal ions and contaminants out of the water body, and proper control would be carry out using no filter and regular filters.</p>
 
                     <p>Image credit: science daily</p>
                     """,
@@ -205,7 +205,7 @@ founders = {
         "personal": "",
         "github": "",
         "linkedin": "",
-        "bio": """Alex is currently pursuing a Ph.D. at Stanford University. Alex is extremely passionate about undergraduate research; he worked in Paul Alivisatos’s Lab on liquid electron microscopy, the Cohen lab on imaging protein movement, and was also an intern at LBNL. He will continue to advise and work with ULAB.""",
+        "bio": """Alex is currently pursuing a Ph.D. at Stanford University. Alex is extremely passionate about undergraduate research; he worked in Paul Alivisatos's Lab on liquid electron microscopy, the Cohen lab on imaging protein movement, and was also an intern at LBNL. He will continue to advise and work with ULAB.""",
     },
     "AMIT AKULA": {
         "title": "Cofounder",
@@ -221,7 +221,7 @@ founders = {
         "personal": "",
         "github": "",
         "linkedin": "https://www.linkedin.com/in/mrina24/",
-        "bio": """Mrina is currently a member of the CS61A Course Staff, Computer Science Mentors, and Society for Women Engineers. Last year, she researched in Dr. Waqas Khalid’s lab at the CITRIS institute on creating a platform that helped visualize a programmable array of nanostructures. She is passionate about promoting diversity in STEM and is excited to lower the barrier for entry into research. """,
+        "bio": """Mrina is currently a member of the CS61A Course Staff, Computer Science Mentors, and Society for Women Engineers. Last year, she researched in Dr. Waqas Khalid's lab at the CITRIS institute on creating a platform that helped visualizea programmable array of nanostructures. She is passionate about promoting diversity in STEM and is excited to lower the barrier for entry into research. """,
     },
     "Dylan Kato": {
         "title": "Lead Mentor",
@@ -229,7 +229,7 @@ founders = {
         "personal": "",
         "github": "",
         "linkedin": "",
-        "bio": """Dylan is part of the Cal Seismic team, Cal Environment team, and an officer in TBP. Dylan does research in Professor Goldberg’s lab that is looking at treating water using solar energy. He facilitated our pilot program partnership with Berkeley Tiny Home, a renewable housing project with which several of our students are working.""",
+        "bio": """Dylan is part of the Cal Seismic team, Cal Environment team, and an officer in TBP. Dylan does research in Professor Goldberg's lab that is looking at treating water using solar energy. He facilitated our pilot program partnership with Berkeley Tiny Home, a renewable housing project with which several of our students are working.""",
     },
     "Michael Oshiro": {
         "title": "Cofounder",
@@ -237,7 +237,7 @@ founders = {
         "personal": "",
         "github": "",
         "linkedin": "",
-        "bio": """Michael works at the LBNL lab with data from the ATLAS experiment, the detector at the Large Hadron Collider. He is interested in making undergraduate research more accessible to freshmen. Michael worked to set up ULAB’s framework for workshops and accessible resources across campus.""",
+        "bio": """Michael works at the LBNL lab with data from the ATLAS experiment, the detector at the Large Hadron Collider. He is interested in making undergraduate research more accessible to freshmen. Michael worked to set up ULAB's framework for workshops and accessible resources across campus.""",
     },
     "Joshua Hug": {
         "title": "Faculty Advisor",
@@ -268,7 +268,7 @@ advisors = {
     "Alex Powers": {
         "title": "Cofounder",
         "img": "img/team/alex_power.jpg",
-        "bio": """Alex is currently pursuing a Ph.D. at Stanford University. Alex is extremely passionate about undergraduate research; he worked in Paul Alivisatos’s Lab on liquid electron microscopy, the Cohen lab on imaging protein movement, and was also an intern at LBNL. He will continue to advise and work with ULAB.""",
+        "bio": """Alex is currently pursuing a Ph.D. at Stanford University. Alex is extremely passionate about undergraduate research; he worked in Paul Alivisatos's Lab on liquid electron microscopy, the Cohen lab on imaging protein movement, and was also an intern at LBNL. He will continue to advise and work with ULAB.""",
     },
     "Sean Burns": {
         "title": "Faculty Advisor",

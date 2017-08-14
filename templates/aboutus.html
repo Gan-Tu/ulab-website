@@ -19,17 +19,6 @@
         
     </div>
 </section>
-    
-<!-- <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 text-center">
-                <h3 class="uppercase color-primary mb40 mb-xs-24">OUR MISSION</h3>
-                <p class="lead">A productive and enjoyable undergraduate research experience at Berkeley requires a significant activation energy that deters many beginning students. This stems from a tendency for many programs to favor already experienced students and difficulty for new students in navigating a complex myriad of resources. Additionally, students who assist graduate mentors often do not get the chance to generate ideas themselves or interact with other undergraduate researchers in diverse fields.<br><br>ULAB proposes to create an undergraduate “research lab” to gently introduce new students to research at Berkeley as well as provide a social/mentoring experience for already advanced undergraduate researchers to learn from each other and develop professionally. “Lab members” will attend workshops on professional communications or reading research papers, go on tours of campus research labs, listen to talks by professors, and present on their own research work. The program is particularly aimed at students who are interested in research but might not be as aggressive or experienced to seek out these opportunities on their own – ULAB will be the catalyst to kickstart their Berkeley research careers.<br></p>
-            </div>
-        </div>
-        
-    </div> -->
 
     <section>
         <div class="container">
@@ -65,7 +54,7 @@
                                                         <img alt="Pic" src="{{ founders[person]['img'] }}" style="height: 240px; max-width: 300px">
                                                         <div class="title">
                                                             <h5 class="uppercase mb0">{{ person }}</h5>
-                                                            <span>{{ founders[person]['title'] }}</span>
+                                                            <!-- <span>{{ founders[person]['title'] }}</span> -->
                                                             <div class="bio-icon">
                                                                 {% if not founders[person]['personal'] == '' %}
                                                                     <span><a href="{{ founders[person]['personal'] }}" target="_blank"><i class="ti-world"></i></a></span>
@@ -111,7 +100,7 @@
                                                         <img alt="Pic" src="{{ advisors[person]['img'] }}" style="height: 240px; max-width: 300px">
                                                         <div class="title">
                                                             <h5 class="uppercase mb0">{{ person }}</h5>
-                                                            <span>{{ advisors[person]['title'] }}</span>
+                                                            <!-- <span>{{ advisors[person]['title'] }}</span> -->
                                                         </div>
                                                         <p class="mb0">
                                                             {{ advisors[person]['bio'] }}

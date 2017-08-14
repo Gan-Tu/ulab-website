@@ -45,7 +45,7 @@ def aboutus():
         for name in team:
             team[name]['img'] = url_for('static', filename=team[name]['img'])     
 
-    return render_template("aboutus.html", founders=founders, advisors=advisors, team=team)
+    return render_template("aboutus.html", founders=founders, advisors=advisors, team=team, foundersOrder=content.foundersOrder)
 
 @app.route("/project")
 @app.route("/project/<name>")

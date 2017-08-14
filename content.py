@@ -193,6 +193,7 @@ research = {
     },
 }
 
+foundersOrder = ["Joshua Hug", "Alex Powers", "AMIT AKULA", "MRINALINI SUGOSH", "Dylan Kato", "Michael Oshiro"]
 founders = {
     # "placeholder": {
     #     "title": "placeholder",
